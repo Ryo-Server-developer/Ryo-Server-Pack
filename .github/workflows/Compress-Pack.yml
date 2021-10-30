@@ -1,0 +1,27 @@
+name: CI
+
+on:
+  push:
+    branches:
+      - master
+
+  workflow_dispatch:
+
+jobs:
+  zip_job:
+    name: Compress the resource pack
+    runs-on: ubuntu-latest
+    steps:
+      - name: Zip Release
+        uses: Ryo-Server-developer/Ryo-Server-Pack@1.0
+        with:
+          # Filename for archive
+          filename: Ryo-Server-Pack.zip
+          # Base path for archive files
+          path: .
+          # Working directory before zipping
+          directory: .
+          # List of excluded files / directories
+          exclusions: ''
+          # Tool to use for archiving
+          type: zip

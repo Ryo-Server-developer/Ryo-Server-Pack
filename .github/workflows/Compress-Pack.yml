@@ -20,7 +20,7 @@ jobs:
           # Base path for archive files
           path: .
           # Working directory before zipping
-          directory: .
+          directory: ./Ryo-Server-Pack
           # List of excluded files / directories
           exclusions: ''
           # Tool to use for archiving

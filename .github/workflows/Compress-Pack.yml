@@ -28,3 +28,6 @@ jobs:
           exclusions: ''
           # Tool to use for archiving
           type: zip
+      - name: ls
+        run: |
+          ls /home/runner/work/Ryo-Server-Pack/

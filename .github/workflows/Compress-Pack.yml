@@ -33,4 +33,4 @@ jobs:
         with:
           artifacts: /home/runner/work/Ryo-Server-Pack/Ryo-Server-Pack/
           bodyFile: Ryo-Server-Pack.zip
-          
+          tag: ver1.0

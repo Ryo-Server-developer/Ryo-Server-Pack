@@ -29,8 +29,9 @@ jobs:
           # Tool to use for archiving
           type: zip
       - name: Release
-        uses: ncipollo/release-action@v1.8.10
+        uses: ncipollo/release-action@v1
         with:
           artifacts: /home/runner/work/Ryo-Server-Pack/Ryo-Server-Pack/
           bodyFile: Ryo-Server-Pack.zip
-          tag: ver1.0
+          token: ${{ secrets.GITHUB_TOKEN }}
+          tag: latest

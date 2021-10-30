@@ -28,7 +28,7 @@ jobs:
           exclusions: ''
           # Tool to use for archiving
           type: zip
-      - name: Action Release
-        uses: yakuhzi/release-asset@v1.2.3
+      - name: Release
+        uses: elgohr/Github-Release-Action@v3.1
         with:
-          file: /home/runner/work/Ryo-Server-Pack/Ryo-Server-Pack/Ryo-Server-Pack.zip
+          release: /home/runner/work/Ryo-Server-Pack/Ryo-Server-Pack/Ryo-Server-Pack.zip

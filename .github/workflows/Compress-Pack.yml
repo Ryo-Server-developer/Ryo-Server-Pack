@@ -40,4 +40,4 @@ jobs:
           artifacts: /home/runner/work/Ryo-Server-Pack/Ryo-Server-Pack/Ryo-Server-Pack.zip
           bodyFile: /home/runner/work/Ryo-Server-Pack/Ryo-Server-Pack/release_note.md
           token: ${{ secrets.GITHUB_TOKEN }}
-          tag: ${{ steps.version.version }}
+          tag: ${{ steps.version.outputs.version }}

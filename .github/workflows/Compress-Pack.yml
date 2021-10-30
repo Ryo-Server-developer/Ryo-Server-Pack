@@ -30,4 +30,5 @@ jobs:
           type: zip
       - name: ls
         run: |
-          ls /home/runner/work/Ryo-Server-Pack/
+          ls /home/runner/work/Ryo-Server-Pack/Ryo-Server-Pack
+          ls $GITHUB_ACTION_PATH/

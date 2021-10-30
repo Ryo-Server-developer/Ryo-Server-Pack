@@ -28,10 +28,16 @@ jobs:
           exclusions: ''
           # Tool to use for archiving
           type: zip
+      - name: Get Version
+        id: version
+        run: |
+          VERSION=$(cat /home/runner/work/Ryo-Server-Pack/Ryo-Server-Pack/release_note.md | grep -m 1 ver | cut -c4-)
+          echo ::set-output name=version::$VERSION
+          echo "Version: $VERSION"
       - name: Release
         uses: ncipollo/release-action@v1
         with:
           artifacts: /home/runner/work/Ryo-Server-Pack/Ryo-Server-Pack/Ryo-Server-Pack.zip
-          bodyFile: /home/runner/work/Ryo-Server-Pack/Ryo-Server-Pack/README.md
+          bodyFile: /home/runner/work/Ryo-Server-Pack/Ryo-Server-Pack/release_note.md
           token: ${{ secrets.GITHUB_TOKEN }}
-          tag: latest
+          tag: ${{ steps.version.version }}

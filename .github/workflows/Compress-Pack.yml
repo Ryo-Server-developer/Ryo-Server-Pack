@@ -13,7 +13,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Zip Release
-        uses: Ryo-Server-developer/Ryo-Server-Pack@1.0
+        uses: Ryo-Server-developer/Ryo-Server-Pack
         with:
           # Filename for archive
           filename: Ryo-Server-Pack.zip

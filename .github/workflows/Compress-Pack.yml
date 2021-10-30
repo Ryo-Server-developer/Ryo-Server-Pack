@@ -23,7 +23,7 @@ jobs:
           # Base path for archive files
           path: .
           # Working directory before zipping
-          directory: ./Ryo-Server-Pack
+          directory: /home/runner/work/Ryo-Server-Pack/Ryo-Server-Pack
           # List of excluded files / directories
           exclusions: ''
           # Tool to use for archiving

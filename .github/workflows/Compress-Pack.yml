@@ -29,6 +29,8 @@ jobs:
           # Tool to use for archiving
           type: zip
       - name: Release
-        uses: elgohr/Github-Release-Action@v3.1
+        uses: ncipollo/release-action@v1.8.10
         with:
-          release: /home/runner/work/Ryo-Server-Pack/Ryo-Server-Pack/Ryo-Server-Pack.zip
+          artifacts: /home/runner/work/Ryo-Server-Pack/Ryo-Server-Pack/
+          bodyFile: Ryo-Server-Pack.zip
+          

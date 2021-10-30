@@ -31,4 +31,6 @@ jobs:
       - name: ls
         run: |
           ls /home/runner/work/Ryo-Server-Pack/Ryo-Server-Pack
+      - name: ls zio
+        run: |
           ls $GITHUB_ACTION_PATH/
